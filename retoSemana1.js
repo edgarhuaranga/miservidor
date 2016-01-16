@@ -24,7 +24,7 @@ var generarRegistro = function(){
 
 app.get('/posts', function(req, res){
 	var cantidad = _.random(5, 50);
-	var objetos = _.times(cantidad, generarObjeto);
+	var objetos = _.times(cantidad, generarRegistro);
 	res.send(objetos)
 });
 
